@@ -4,6 +4,11 @@ module.exports = {
     color: '#13c2c2',
     mode: 'dark',
   },
+  customColor:{
+    btnColor:'#ffab00',
+    titleColor:'#a31010',
+    tipsColor:'#040cff',
+  },
   multiPage: true,
   animate: {
     name: 'lightSpeed',

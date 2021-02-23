@@ -68,6 +68,12 @@
           <a-icon class="icon" type="weibo-circle" />
           <router-link style="float: right" to="/dashboard/workplace" >注册账户</router-link>
         </div>
+        <div>
+          <p class="themeColor">主题颜色</p>
+          <p class="customColor1">自定义颜色</p>
+          <p class="customColor2">自定义颜色</p>
+          <p class="customColor3">自定义颜色</p>
+        </div>
       </a-form>
     </div>
   </common-layout>
@@ -188,4 +194,16 @@ export default {
       }
     }
   }
+.themeColor {
+  color:@theme-color;
+}
+.customColor1 {
+  color: @btnColor;
+}
+.customColor2 {
+  color: @titleColor;
+}
+.customColor3 {
+  color: @tipsColor;
+}
 </style>

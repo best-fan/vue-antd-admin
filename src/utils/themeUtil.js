@@ -1,5 +1,5 @@
 const client = require('webpack-theme-color-replacer/client')
-const {theme} = require('../config')
+const {theme,customColor} = require('../config')
 const {getMenuColors, getAntdColors, getThemeToggleColors, getFunctionalColors} = require('../utils/colors')
 const {ANTD} = require('../config/default')
 
@@ -60,7 +60,9 @@ function modifyVars(color) {
     'layout-header-background': menuColors[1],
     'layout-trigger-background': menuColors[2],
     'btn-danger-bg': error[4],
-    'btn-danger-border': error[4],
+    'btn-danger-border': error[4],		    
+    'theme-color':_color,
+    ...customColor,
     ...ANTD.theme[theme.mode]
   }
 }
